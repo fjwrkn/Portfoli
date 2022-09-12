@@ -9,12 +9,6 @@ html,body,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ul,ol,li{
 	font-weight:normal;
 	line-height:1;}
 	
-	@media screen and (max-width:480px) {
- 
-	/*　画面サイズが480px以下の場合ここの記述が適用される　*/
- 
-}
-	
 
 header h1{
 	font-family:"Times New Roman", Times, serif;
