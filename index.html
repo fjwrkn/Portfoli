@@ -2,59 +2,85 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>FK Portfolio</title>
+<title>Contact</title>
 <link rel="stylesheet" href="style.css">
 </head>
+<header>
+    <div class="hamburger-menu">
+        <input type="checkbox" id="menu-btn-check">
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <!--ここからメニュー-->
+        <div class="menu-content">
+            <ul>
+                <li>
+                    <a href="#">Sample</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!--ここまでメニュー-->
+    </div>
+</header>
 
 <body>
-
-
-<header class="header">
-<h1>Portfolio</h1>
-    
-      <!-- ハンバーガーメニュー部分 -->
-      <div class="nav">
-    
-        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
-        <input id="drawer_input" class="drawer_hidden" type="checkbox">
-    
-        <!-- ハンバーガーアイコン -->
-        <label for="drawer_input" class="drawer_open"><span></span></label>
-    
-        <!-- メニュー -->
-        <nav class="nav_content">
-          <ul class="nav_list">
-            <li class="nav_item"><a href="">Profile</a></li>
-            <li class="nav_item"><a href="">Illustration</a></li>
-            <li class="nav_item"><a href="">Contact</a></li>
-          </ul>
-        </nav>
-         
-    
-      </div>
-    </header>
-
-
-<div class="mv">
-<img src="mv.jpg"width="1200" height="600" alt="藤原佳奈のホームページ">
-</div>
-
 <div class="inner">
+	<section class="form">
+		<h2>Contact</h2>
+			<div class="line anim">
+		<p>ご依頼内容をご記入ください</p></div>
+		
+		<div class="form"><FORM>
+			<div class="nyuryoku">
 
-<section class="prof">
-<h2 class="prof">Profile</h2>
-<div class="me"><img src="me.png" width="400" height="400" alt="プロフィール画像"></div>
-<ul class="prof">
-<li></li>
-<li>芸術デザイン専門学校</li>
-<li>産業デザイン学科</li>
-<li>イラストレーション専攻</li>
-</ul>
-</section>
+			<div class="name">Name</div>
+				<div><INPUT TYPE="text" placeholder="野田"></div>
+
+			<div class="name">account</div>
+			<div><INPUT TYPE="text" placeholder="@Fi0_119"></div>
+
+			<div class="name">お描きする人数</div>
+			<div><select name="people"></div>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="other">その他(要相談)</option></select></div></div>
+			<div><p>※人数追加ごとに＋1000円</p></div>
+			<div class="radio">
+			<label><div class="kibou">納期希望</div><input type="radio" value="いつでも" name="nouki" checked>いつでも
+			</label>
+			<label><input type="radio" value="早め" name="nouki">早め(追加料金2000円)</label>
+		</div>
+
+			<div class="cheakbox">
+				<div class="cheaktitle"> 追加オプション(複数選択可)</div>
+			   <label>
+				<input type="checkbox" value="background" name="option">凝った背景
+				</label>
+			   <label> <input type="checkbox" value="background" name="option">動物</label>
+			   <label><input type="checkbox" value="background" name="option">まばたきアニメーション</label> 
+			</div>
+
+			<div class="img">
+				<form action="test.html" method="post" enctype="multipart/form-data" >
+				  <div>
+					<div class="kibou">コテキャ詳細など</div>
+					<input type="file" name="img" multiple/>
+				  </div>
+				</form>
+			  </div>
+			
+			<div class="massagetitle"><label for="messagetitle">Message</label></div>
+			<div class="massage">
+			<textarea name="message" placeholder="ご依頼内容をご記入ください！" cols="40" rows="11"></textarea></div>
+			<div><input type="submit" value="送信"></div>
+			</FORM>
+		
+			</section>
 
 </div><!-- end .inner -->
-
 
 
 </body>
